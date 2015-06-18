@@ -1,0 +1,79 @@
+<?php /* @var $collector \DoctrineORMModule\Collector\SQLLoggerCollector */ ?>
+<div class="zdt-toolbar-entry">
+    <div class="zdt-toolbar-preview">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNDg2ODg3OTBCNkIxMUU1QUJGREM2MEMyQTZENUM3MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNDg2ODg3QTBCNkIxMUU1QUJGREM2MEMyQTZENUM3MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA0ODY4ODc3MEI2QjExRTVBQkZEQzYwQzJBNkQ1QzcxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA0ODY4ODc4MEI2QjExRTVBQkZEQzYwQzJBNkQ1QzcxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+l76wjQAAA8NJREFUeNqUlG9ME2cYwJ/3fa93V2wpQVpWBEsl/puOErYiYzKYbm5xYkAlcYsORwLJ2IctM1nVJWR8m/sws5g4TbZ9MY5gccZQN4ySbAaIqIFU8c9AWkBhUEVph9Dr9e7dXUtNqWVxT/Le5d573t/z/0WUUnA4HOB0OiFeKJVBCAXBoDcuKS7c3cjzqRnd105+NfVkdIJhOMCYLNC32+3Q0tICjPrh8/nA6/VCoqxcUVK1xlLRqNVYC7CMwLa65q2+/rZv+v+6+DOAHI7XNZvNkTeOPDBeADLoc+yv2vacdzpP/7qn5v0CSiUaDApgSDVZ33mz4cQHld925Vk2vBt/hpCox0wsPFW0fFp2bs7Gg5nG9fUYM0xauobu/PAVVGA3y22tbuh3jxOBCGBcai3a9raj3TN61Xml9/TXD6c8t6V5hyNAhnA6U3pB/ZpVmxwsqzOFw0GQpBAVRUm1RPJWZpDPD26mV7uHpfNnb6L7I08wxzGQl1tcvTwrf2u323WU0/3znaL7MAJckVveZLXoviBEAypMLRQASkwpKirJJbbCbNrRfle6+Psd7J/2I6zXLqlYXXFgSxZZq+hUMtH42XRZFhXQwsohhOYrThVDMmg0BDieQVsr1xMFLrta3TLnugllE49Jepo1Iz6H4efcQdE1NPAIWpt7Ye5pCLZX26DQnhP5n2HS4X278qXAqW4sKsaCiIb5GDCZaFgCPV1e6OwYgZmZIPC8Bo4fuQw2eybUfVoOLMuAHAqDiBFIiuFYbHgxoBiS4bViCzTsL4NVazNhNjgHY5PDcOFCFwiCOJ8KZSWcWxSo5k3tz3X5ZjjQ9B5U7V4HEp0FtR9juU0mi4Ycg0aLhmBH9etQWvYytJ3rebb/v4GJYjQZoLZuy3/q4BciiRKVBn3hF1Gdn2WGV9biWjKl/i/PQuDQOVl+MC0ndhinnE0hbMoz4N+T7hP+wINrDMMDRuR5IMGqJhbP9GHv3p9o84+XxKdzIUr0KSSN0cLgnG/wh/HLh+VYDqceD3XeHXK+MRssqlueXXyIY1OXKbOM4qqjdjklOg6kGQEdP+rSuP68DR9tzp/uHe84cnjwt++tS23+z2JAdYaVU+LoWM+xyUd3Wi3LShxZL9k+0WpTtInOajkeG3i9clFcOtXyS2OTJPvvqfuphEteFEEI+AY87ft7b5zc0NnZcSY6NkS5nzHhCAt9geE/rt9qLr/nadsbg0WCiO+12trapLVQ+7fm431V9z0jA2O7jk00GDfWs4gk7erS0tII618BBgC4iX2TmXL8VQAAAABJRU5ErkJggg==" alt="SESSION Data">
+        <span class="zdt-toolbar-info">
+            <?php echo $collector->getQueryCount(); ?>
+            queries in
+            <?php echo $this->zendDeveloperToolsTime($collector->getTotalTime()); ?>
+        </span>
+    </div>
+    <div class="zdt-toolbar-detail">
+        <span class="zdt-toolbar-info zdt-toolbar-info-heading">
+            <a href="https://github.com/bnitoBzh" target="_blank">
+                Pomm
+            </a>
+        </span>
+        <span class="zdt-toolbar-info zdt-toolbar-info-heading">
+            Queries for
+            <span class="ddt-toolbar-info"> <?php echo $collector->getName() ?></span>
+        </span>
+        <span class="zdt-toolbar-info ddt-toolbar-info">
+        <?php foreach ($collector->getQueries() as $query): ?>
+            <hr/>
+            <span class="zdt-detail-label">SQL</span>
+            <span class="zdt-detail-value ddt-detail-query ddt-detail-value">
+                <?php /* highlight UPPERCASE words in the query, which should mostly match SQL keywords */ ?>
+                <?php echo preg_replace('/\b([A-Z]+)\b/', '<span class="highlight">$1</span>', $this->escapeHtml($query['sql'])) ?>
+            </span>
+            <span class="clear"></span>
+            <span class="zdt-detail-label">Params</span>
+            <span class="zdt-detail-value ddt-detail-value">
+                <?php if (isset($query['parameters']) && is_array($query['parameters'])): ?>
+                    <?php foreach($query['parameters'] as $key => $value): ?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $key ?> => <?php var_dump($value) ?><br/>
+                    <?php endforeach ?>
+                <?php endif ?>
+            </span>
+            <span class="clear"></span>
+            <span class="zdt-detail-label">Time</span>
+            <span class="zdt-detail-value ddt-detail-value"><?php echo $this->zendDeveloperToolsTime($query['time_ms']/1000); ?></span>
+            <span class="clear"></span>
+            <span class="clear"></span>
+            <span class="zdt-detail-label">Session</span>
+            <span class="zdt-detail-value ddt-detail-value"><?php echo $query['session_stamp'] ?></span>
+            <span class="clear"></span>
+        <?php endforeach ?>
+        </span>
+    </div>
+</div>
+<style>
+.zdt-toolbar-entry .zdt-toolbar-detail .ddt-toolbar-info {
+    font-size: 11px;
+    max-width: 600px;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.zdt-toolbar-entry .zdt-toolbar-detail .ddt-detail-query {
+    white-space: normal;
+    width: 400px;
+}
+
+.zdt-toolbar-entry .zdt-toolbar-detail .ddt-detail-query .highlight {
+    color: #80DC09;
+    font-weight: bold;
+}
+
+.zdt-toolbar-entry .zdt-toolbar-info .clear {
+    clear: both;
+    display: block;
+}
+
+.zdt-toolbar-entry .zdt-toolbar-detail .ddt-toolbar-info hr {
+    border: 0;
+    border-top: 1px solid #80DC09;
+    clear: both;
+}
+</style>
